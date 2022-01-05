@@ -1,6 +1,6 @@
 export const Command = Object.freeze({
   execute: () => Promise.resolve(`
-USAGE: pki-cli <command>
+USAGE: pinki <command>
 
 COMMANDS:
 

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -eu
+
+BIN_DIR="$(cd "$(dirname "$0")" && pwd)"
+PINKI_DIR="$(dirname "${BIN_DIR}")"
+
+if [ "$(basename "${BIN_DIR}")" = ".bin" ]; then
+  PINKI_DIR="${PINKI_DIR}/pinki"
+fi
+
+exec node "${PINKI_DIR}/lib/esm/index.mjs" "$@"

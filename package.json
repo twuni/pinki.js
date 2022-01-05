@@ -1,9 +1,9 @@
 {
   "name": "pinki",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pinki is a CLI for signing and verifying software releases.",
   "bin": {
-    "pinki": "lib/esm/index.mjs"
+    "pinki": "src/index.mjs"
   },
   "repository": {
     "type": "git",
